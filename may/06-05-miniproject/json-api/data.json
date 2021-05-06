@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Iulian",
+    "age": 34,
+    "city": "Altenburg",
+    "photo": "🤠"
+  },
+  {
+    "id": 2,
+    "name": "Maria",
+    "age": 23,
+    "city": "Hamburg",
+    "photo": "👧"
+  },
+  {
+    "id": 3,
+    "name": "Mihai",
+    "age": 28,
+    "city": "Berlin",
+    "photo": "🧑"
+  },
+  {
+    "id": 4,
+    "name": "Daniel",
+    "age": 25,
+    "city": "Frankfurt",
+    "photo": "🧔"
+  }
+]
