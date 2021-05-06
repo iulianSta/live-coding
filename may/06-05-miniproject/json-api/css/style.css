@@ -1,0 +1,21 @@
+/* All elements style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Body style */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/* H1 style */
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: bold;
+  color: #292828;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
