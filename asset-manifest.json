@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d5b29c0.chunk.css",
-    "main.js": "/static/js/main.bfe4067a.chunk.js",
-    "main.js.map": "/static/js/main.bfe4067a.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0567bb75.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0567bb75.js.map",
-    "static/js/2.d7c27d8d.chunk.js": "/static/js/2.d7c27d8d.chunk.js",
-    "static/js/2.d7c27d8d.chunk.js.map": "/static/js/2.d7c27d8d.chunk.js.map",
-    "static/js/3.a435a2b2.chunk.js": "/static/js/3.a435a2b2.chunk.js",
-    "static/js/3.a435a2b2.chunk.js.map": "/static/js/3.a435a2b2.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.9d5b29c0.chunk.css.map": "/static/css/main.9d5b29c0.chunk.css.map",
-    "static/js/2.d7c27d8d.chunk.js.LICENSE.txt": "/static/js/2.d7c27d8d.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/static/media/logo.6ce24c58.svg"
+    "main.css": "/git@github.com:hnsreeny/react-test.git/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/git@github.com:hnsreeny/react-test.git/static/js/main.bfe4067a.chunk.js",
+    "main.js.map": "/git@github.com:hnsreeny/react-test.git/static/js/main.bfe4067a.chunk.js.map",
+    "runtime-main.js": "/git@github.com:hnsreeny/react-test.git/static/js/runtime-main.6cf35af3.js",
+    "runtime-main.js.map": "/git@github.com:hnsreeny/react-test.git/static/js/runtime-main.6cf35af3.js.map",
+    "static/js/2.d7c27d8d.chunk.js": "/git@github.com:hnsreeny/react-test.git/static/js/2.d7c27d8d.chunk.js",
+    "static/js/2.d7c27d8d.chunk.js.map": "/git@github.com:hnsreeny/react-test.git/static/js/2.d7c27d8d.chunk.js.map",
+    "static/js/3.a435a2b2.chunk.js": "/git@github.com:hnsreeny/react-test.git/static/js/3.a435a2b2.chunk.js",
+    "static/js/3.a435a2b2.chunk.js.map": "/git@github.com:hnsreeny/react-test.git/static/js/3.a435a2b2.chunk.js.map",
+    "index.html": "/git@github.com:hnsreeny/react-test.git/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/git@github.com:hnsreeny/react-test.git/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.d7c27d8d.chunk.js.LICENSE.txt": "/git@github.com:hnsreeny/react-test.git/static/js/2.d7c27d8d.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/git@github.com:hnsreeny/react-test.git/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.0567bb75.js",
+    "static/js/runtime-main.6cf35af3.js",
     "static/js/2.d7c27d8d.chunk.js",
     "static/css/main.9d5b29c0.chunk.css",
     "static/js/main.bfe4067a.chunk.js"
