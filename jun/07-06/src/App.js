@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import List from "./components/List";
+import { Fragment } from "react";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -44,3 +43,6 @@ Run useEffect When a Prop Changes
 
 */
 export default App;
+const App = () => {
+  return <Fragment>Hi</Fragment>;
+};
