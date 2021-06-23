@@ -26,5 +26,29 @@
 
 - morse code translator with react
 
+[07/06/2020](jun/07-06)
 
+- useEffect and its equivalent in class components
 
+[08/06/2020](jun/08-06)
+
+- axios
+- fetching from an API with axios
+
+[14/06/2020](jun/14-06)
+
+- online-shop with react
+
+[15/06/2020](jun/15-06)
+
+- react-router-dom
+- online-shop react (continue)
+- project: portfolio with react (start)
+
+[21/06/2020](jun/21-06)
+
+- useRef
+
+[22/06/2020](jun/22-06)
+
+- context API
