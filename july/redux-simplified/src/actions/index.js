@@ -1,18 +1,15 @@
-// Step 1
-
+// step 1
 const increment = () => {
   return {
-    type: "INCrement",
+    type: "INCREMENT",
   };
 };
-
 const decrement = () => {
   return {
     type: "DECREMENT",
   };
 };
-
-const changeName = () => {
+const changeName = (name) => {
   return {
     type: "CHANGE_NAME",
     payload: name,

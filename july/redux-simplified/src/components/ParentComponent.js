@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-//step 6
+// step 6
 import { connect } from "react-redux";
 import { changeName } from "../actions";
 import ChildComponent from "./ChildComponent";
@@ -19,7 +19,6 @@ const mapStateToProps = (store) => {
     store,
   };
 };
-
 const mapDispatchToProps = { changeName };
 
 export default connect(mapStateToProps, mapDispatchToProps)(ParentComponent);
