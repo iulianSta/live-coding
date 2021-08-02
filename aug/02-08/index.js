@@ -15,7 +15,7 @@
 // });
 
 // this is the real deal
-const args = process.argv.slice(2);
+//const args = process.argv.slice(2);
 //console.log(args);
 // fs (File System) built-in module in NodeJs
 const fs = require("fs");
