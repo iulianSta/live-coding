@@ -68,3 +68,5 @@ function med(numArray) {
       console.log("I can not do this task yet, please write sum or avg");
   }
 }
+
+med(numbers);
