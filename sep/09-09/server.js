@@ -7,17 +7,15 @@ To start new express project
  npm i dotenv
  npm i morgan
  npm i mongoose
- npm i ejs
- npm i faker
  npm i nodemon --save-dev
  touch server.js app.js
- mkdir model views controller
- touch views/home.ejs
- touch model/user.js
- touch controller/index.js
- json script
+ mkdir model controller
+ touch model/authorModel.js
+ touch controller/bookController.js
+ - json script
  "start": "nodemon server.js"
- // use users -> create new DB in mongo or use that if it's already there.
+ - create new DB in mongo shell
+ use library
  */
 
 require("dotenv").config();
