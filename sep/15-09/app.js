@@ -22,7 +22,11 @@ app.engine(
 
 // to process the data
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
 // validations
 // Validation setup
 const { body, validationResult } = require("express-validator");
@@ -49,10 +53,11 @@ mongoose
   });
 // Alow uploads
 app.use("/uploads", express.static("uploads"));
+//
 const auth = require("./routes/auth");
 app.use("/", auth);
-// const users = require("./routes/users");
-// app.use("/users", users);
-// const user = require("./routes/user");
-// app.use("/user", user);
+const users = require("./routes/users");
+app.use("/users", users);
+const user = require("./routes/user");
+app.use("/user", user);
 module.exports = app;

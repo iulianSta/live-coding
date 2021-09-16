@@ -3,6 +3,7 @@ const bcrypt = require("bcrypt");
 const User = require("../models/userModel");
 const Session = require("../models/sessionModel");
 const uuid = require("uuid").v4;
+
 const userControllers = {};
 
 userControllers.getAllUsers = async (req, res) => {
@@ -20,10 +21,7 @@ userControllers.addUser = async (req, res) => {
       .status(400)
       .send("This name is already been used <br> <a href='/'>Try again</a>");
   }
-  // to validate later :)
-  // if any errors
-  // req.session.done = false;
-  // it was cool and no errors
+
   req.session.done = true;
   try {
     const hashedPassword = await bcrypt.hash(req.body.password, 10);
@@ -34,7 +32,7 @@ userControllers.addUser = async (req, res) => {
       _id: mongoose.Types.ObjectId(),
       username: req.body.username,
       password: hashedPassword,
-      // role: "ADMIN",
+      //role: "ADMIN",
       role: "USER",
       avatar: req.file.path,
     });
@@ -45,13 +43,14 @@ userControllers.addUser = async (req, res) => {
     res.status(400).json({ message: err.message });
   }
 };
-
 userControllers.login = async (req, res) => {
   let username = req.body.username;
   let password = req.body.password;
   const user = await User.findOne({ username });
   if (user == null) {
-    res.status(404).send("Cannot find user <br> <a href='/'>try again</a>");
+    return res
+      .status(404)
+      .send("Cannot find user <br> <a href='/'>try again</a>");
   }
   try {
     if (await bcrypt.compare(password, user.password)) {
@@ -83,6 +82,14 @@ userControllers.login = async (req, res) => {
     res.status(err.status).json({ message: err.message });
   }
 };
+userControllers.logout = async (req, res) => {
+  if (req.cookies && req.cookies.session_id) {
+    res.clearCookie("session_id");
+    res.clearCookie("role");
+    res.clearCookie("user_id");
+  }
+  res.redirect("/");
+};
 userControllers.getOne = async (req, res) => {
   const username = req.params.name;
   try {
@@ -97,7 +104,8 @@ userControllers.deleteOneById = async (req, res) => {
   const id = req.params.id;
   try {
     const user = await User.findByIdAndDelete(id);
-    res.status(200).json(user);
+    // logout
+    res.status(200).json({ message: "This user is deleted ", user });
   } catch (err) {
     res.status(err.status).json({ message: err.message });
   }
